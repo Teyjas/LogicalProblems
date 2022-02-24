@@ -26,8 +26,25 @@ internal class ProgramsList
         } while (n < 0);
         return n;
     }
+    // Calculates fibonacci for user i/p n
+    public static void Fibonacci()
+    {
+        int current = 1;
+        int previous = 0;
+        int sum;
+        Console.WriteLine("----------Fibonacci Series----------");
+        int n = GetPositiveInt("Enter a +ve no: ");
+        Console.WriteLine("The series is: ");
+        Console.Write("0 1 ");
+        for (int i = 2; i <= n; i++)
+        {
+            sum = current + previous;
+            previous = current;
+            current = sum;
+            Console.Write(sum + " ");
+        }
+    }
 
-    
 }
 
 
