@@ -44,7 +44,22 @@ internal class ProgramsList
             Console.Write(sum + " ");
         }
     }
-
+    // Checks if sum of divisors of n = n
+    public static void PerfectNo()
+    {
+        int sumOfDivisors = 0;
+        Console.WriteLine("----------Perfect Number----------");
+        Console.WriteLine("Checks if sum of divisors of n = n");
+        int n = GetPositiveInt("Enter a +ve no: ");
+        for (int i = 1; i <= n / 2; i++)
+            if (n % i == 0)
+                sumOfDivisors += i;
+        if (sumOfDivisors == n)
+            Console.WriteLine("It is a Perfect Number!");
+        else
+            Console.WriteLine("It is not a Perfect Number");
+    }
+    
 }
 
 
