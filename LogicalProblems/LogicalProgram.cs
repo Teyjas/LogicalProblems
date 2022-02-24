@@ -5,5 +5,6 @@ Console.Title = "Logical Programs";
 //ProgramsList.PerfectNo();
 //ProgramsList.Prime();
 //ProgramsList.ReverseNo();
-ProgramsList.GetCoupons();
+//ProgramsList.GetCoupons();
+ProgramsList.TimeElapsed();
 Console.ReadKey();

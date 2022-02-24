@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -100,6 +101,19 @@ internal class ProgramsList
         Console.WriteLine("Coupons Generated:");
         foreach (int coupon in coupons)
             Console.Write(coupon + " ");
+    }
+    // Computes time elapsed until user stops the watch
+    public static void TimeElapsed()
+    {
+        Stopwatch timer = Stopwatch.StartNew();
+        Console.WriteLine("----------Stop Watch----------");
+        Console.WriteLine("Enter any key to start timer");
+        Console.ReadKey(true);
+        timer.Start();
+        Console.WriteLine("Enter any key to stop timer");
+        Console.ReadKey(true);
+        timer.Stop();
+        Console.WriteLine("Time elapsed: " + timer.Elapsed);
     }
 }
 
