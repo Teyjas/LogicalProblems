@@ -83,6 +83,24 @@ internal class ProgramsList
             reverse = (reverse * 10) + (n % 10);
         Console.WriteLine("Reverse is " + reverse);
     }
+    // Genreates n distinct coupons
+    public static void GetCoupons()
+    {
+        List<int> coupons = new List<int>();
+        Random rand = new Random();
+        int randomInput;
+        Console.WriteLine("----------Get Distinct Coupons----------");
+        int n = GetPositiveInt("Enter no of coupons required: ");
+        while (coupons.Count < n)
+        {
+            randomInput = rand.Next(1, n + 1);
+            if (coupons.Contains(randomInput) is false)
+                coupons.Add(randomInput);
+        }
+        Console.WriteLine("Coupons Generated:");
+        foreach (int coupon in coupons)
+            Console.Write(coupon + " ");
+    }
 }
 
 
