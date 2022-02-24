@@ -73,6 +73,16 @@ internal class ProgramsList
         else
             Console.WriteLine("The no is not Prime");
     }
+    // Reverses a no
+    public static void ReverseNo()
+    {
+        int reverse = 0;
+        Console.WriteLine("----------Reverse the Number----------");
+        int n = GetPositiveInt("Enter a +ve no: ");
+        for (; n > 0; n /= 10)
+            reverse = (reverse * 10) + (n % 10);
+        Console.WriteLine("Reverse is " + reverse);
+    }
 }
 
 

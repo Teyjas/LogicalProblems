@@ -3,5 +3,6 @@
 Console.Title = "Logical Programs";
 //ProgramsList.Fibonacci();
 //ProgramsList.PerfectNo();
-ProgramsList.Prime();
+//ProgramsList.Prime();
+ProgramsList.ReverseNo();
 Console.ReadKey();
