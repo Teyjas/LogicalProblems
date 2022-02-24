@@ -2,5 +2,6 @@
 
 Console.Title = "Logical Programs";
 //ProgramsList.Fibonacci();
-ProgramsList.PerfectNo();
+//ProgramsList.PerfectNo();
+ProgramsList.Prime();
 Console.ReadKey();

@@ -59,7 +59,20 @@ internal class ProgramsList
         else
             Console.WriteLine("It is not a Perfect Number");
     }
-    
+    // Checks if input is prime
+    public static void Prime()
+    {
+        bool IS_PRIME = true;
+        Console.WriteLine("----------Prime Number----------");
+        int n = GetPositiveInt("Enter a +ve no: ");
+        for (int i = 2; i < n / 2; i++)
+            if (n % i == 0)
+                IS_PRIME = false;
+        if (IS_PRIME)
+            Console.WriteLine("The no is Prime!");
+        else
+            Console.WriteLine("The no is not Prime");
+    }
 }
 
 
